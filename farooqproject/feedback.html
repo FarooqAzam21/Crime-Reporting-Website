@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="crimereport.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <!-- Example interactive feedback section -->
+<section id="feedback">
+    <h2>Submit Feedback</h2>
+    <form action="submit_feedback.php" method="POST">
+        <label for="report_id">Report ID:</label>
+        <input type="text" id="report_id" name="report_id" required>
+
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+    </main>
+</body>
+</html>

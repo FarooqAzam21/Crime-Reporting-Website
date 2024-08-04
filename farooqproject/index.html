@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Reporting System</title>
+    <link rel="stylesheet" href="crimereport.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <header>
+        
+        
+        <div class="hero">
+            <h1>Welcome to the Crime Reporting System</h1>
+            <p>Your safety is our priority. Report any crime easily and anonymously.</p>
+            <a href="report.html" class="btn">Report a Crime</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="support_system.html">Resources</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">User Account</button>
+                    <div class="dropdown-content">
+                        <a href="user_login.html">Login</a>
+                        <a href="user_registration.html">Register</a>
+                        <a href="user_logout.php">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-transparent">
+            <h2>About the Crime Reporting System</h2>
+            <p>This system allows citizens to report crimes in their area and view a real-time graph of reported incidents. The goal is to increase transparency and support law enforcement in keeping our community safe.</p>
+        </section>
+        <section class="section-transparent">
+            <h2>Crime Rate Graph</h2>
+            <div id="crimeGraph">
+                <canvas id="crimeRateChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+        <section class="features">
+            <h2>Our Services</h2>
+            <div class="feature">
+                <br>
+                <img src="icons8-submit-progress-50.png" alt="Report">
+                <h3>Report a Crime</h3>
+                <p>Submit your crime report online quickly and securely.</p>
+            </div>
+            <br>
+            <div class="feature">
+                <img src="icons8-customer-support-50 (1).png" alt="Emergency">
+                <h3>Emergency Contacts</h3>
+                <p>Find important emergency contact numbers.</p>
+            </div>
+            <br>
+            <div class="feature">
+                <img src="icons8-victim-64.png" alt="Support">
+                <h3>Victim Support</h3>
+                <p>Access resources and support for victims of crime.</p>
+            </div>
+            <br>
+            <div class="feature">
+                <img src="icons8-resources-48.png" alt="Legal">
+                <h3>Legal Resources</h3>
+                <p>Get legal help and resources for crime-related issues.</p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>User Testimonials</h2>
+            <div class="testimonial">
+                <p>"This system made it so easy to report a crime. I felt safe and supported throughout the process."</p>
+                <h4>- Jane Doe</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Thanks to the victim support resources, I was able to get the help I needed quickly."</p>
+                <h4>- John Smith</h4>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Crime Reporting System. All rights reserved.</p>
+            <div class="socials">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

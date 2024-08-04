@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Crime</title>
+    <link rel="stylesheet" href="crimereport.css">
+</head>
+<body>
+    <header>
+        <h1>Report a Crime</h1>
+    </header>
+    <main>
+        <div class="crimeForm">
+            <form id="crimeForm" action="submit_report.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="description">Crime Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="id">Id:</label>
+            <input type="number" id="id" name="id" required>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Submit Report</button>
+            <!-- Hidden input for user_id -->
+            <input type="hidden" id="user_id" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
+
+            <!-- Hidden input for status with default value 'Pending' -->
+            <input type="hidden" id="status" name="status" value="Pending">
+            </form>
+        </div>    
+    </main>
+    <script src="scrript.js"></script>
+</body>
+</html>
